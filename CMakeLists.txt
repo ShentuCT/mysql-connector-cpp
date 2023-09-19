@@ -331,7 +331,7 @@ INCLUDE_DIRECTORIES(include)
 # Note: it is included before setting higher warning levels.
 #
 
-add_config_option(WITH_JDBC BOOL DEFAULT OFF
+add_config_option(WITH_JDBC BOOL DEFAULT ON
  "Whether to build a variant of connector library which implements legacy JDBC API"
 )
 
