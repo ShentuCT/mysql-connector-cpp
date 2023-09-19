@@ -2506,6 +2506,7 @@ long double strtold(const char *nptr, char **endptr)
 
 long double strtonum(const std::string &str, int radix)
 {
+  return std::stod(str);
   typedef std::istreambuf_iterator<char> iter_t;
   static std::locale c_locale("C");
   static const std::num_get<char> &cvt
